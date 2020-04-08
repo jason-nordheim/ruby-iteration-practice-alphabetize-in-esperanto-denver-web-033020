@@ -8,18 +8,18 @@ def alphabetize(array)
     parsed_b = remove_spaces(b)
     a1 = ESPERANTO_ALPHABET.index(parsed_a[0])
     b1 = ESPERANTO_ALPHABET.index(parsed_b[0])
-    compare_0 = perform_compare(a1,b1)
-    if compare_0 == 0
+    compare_1 = perform_compare(a1,b1)
+    if compare_1 == 0
       a2 = ESPERANTO_ALPHABET.index(parsed_a[1])
       a2 = ESPERANTO_ALPHABET.index(parsed_b[1])
-      compare_1 = perform_compare(a2,b2)
-      if compare_1 == 0
-
+      compare_2 = perform_compare(a2,b2)
+      if compare_2 == 0
+        a3 =
       else
-        return compare_1
+        return compare_2
       end
     else
-      return compare_0
+      return compare_1
     end
   end
 end
