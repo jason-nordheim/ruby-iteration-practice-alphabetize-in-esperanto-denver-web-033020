@@ -34,7 +34,7 @@ def remove_spaces(word)
   word.gsub("\s","")
 end
 
-def ind_of(letter)
+def index_of(letter)
   ESPERANTO_ALPHABET.index(letter)
 end
 
