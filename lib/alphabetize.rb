@@ -6,16 +6,16 @@ def alphabetize(array)
   array.sort do |a,b|
     parsed_a = remove_spaces(a)
     parsed_b = remove_spaces(b)
-    a1 = ESPERANTO_ALPHABET.index(parsed_a[0])
-    b1 = ESPERANTO_ALPHABET.index(parsed_b[0])
+    a1 = index_of(parsed_a[0])
+    b1 = index_of(parsed_b[0])
     compare_1 = perform_compare(a1,b1)
     if compare_1 == 0
-      a2 = ESPERANTO_ALPHABET.index(parsed_a[1])
-      a2 = ESPERANTO_ALPHABET.index(parsed_b[1])
+      a2 = index_of(parsed_a[1])
+      a2 = index_of(parsed_b[1])
       compare_2 = perform_compare(a2,b2)
       if compare_2 == 0
-        a3 = ESPERANTO_ALPHABET.index(parsed_a[2])
-        b3 = ESPERANTO_ALPHABET.index(parsed_b[2])
+        a3 = index_of(parsed_a[2])
+        b3 = index_of(parsed_b[2])
         compare_3 = perform_compare(a3,b3)
       else
         return compare_2
