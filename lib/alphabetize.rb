@@ -17,6 +17,13 @@ def alphabetize(array)
         a3 = index_of(parsed_a[2])
         b3 = index_of(parsed_b[2])
         compare_3 = perform_compare(a3,b3)
+        if compare_3 == 0 
+          a4 = index_of(parsed_a[3])
+          a4 = index_of(parsed_b[3])
+          compare_4 = perform_compare(a4,b4)
+        else
+          return compare_3 
+        end
       else
         return compare_2
       end
