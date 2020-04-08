@@ -3,10 +3,8 @@ require 'pp'
 ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
 def alphabetize(array)
-  array.sort do |a,b|
-
-  end
-end
+  array.sort_by { |val| ESPERANTO_ALPHABET.index(val)}
+end 
 
 def remove_spaces(word)
   word.gsub("\s","")
