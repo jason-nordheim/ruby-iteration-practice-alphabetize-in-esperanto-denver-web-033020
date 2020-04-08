@@ -8,6 +8,7 @@ def alphabetize(array)
     parsed_b = remove_spaces(b)
     a1 = ESPERANTO_ALPHABET.index(parsed_a[0])
     b1 = ESPERANTO_ALPHABET.index(parsed_b[0])
+    compare_0 = perform_compare(a1,b1)
     if a1 == b1
       # take a look at character 2
       a2 = ESPERANTO_ALPHABET.index(parsed_a[1])
