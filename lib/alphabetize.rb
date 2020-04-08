@@ -23,7 +23,7 @@ def alphabetize(array)
 end
 
 def perform_compare(a, b)
-  a <=> b 
+  a <=> b
 end
 
 def remove_spaces(word)
