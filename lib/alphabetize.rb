@@ -4,7 +4,7 @@ ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
 def alphabetize(array)
   array.sort_by { |val| ESPERANTO_ALPHABET.index(val)}
-end 
+end
 
 def remove_spaces(word)
   word.gsub("\s","")
