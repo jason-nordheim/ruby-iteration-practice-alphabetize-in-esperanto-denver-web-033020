@@ -11,22 +11,6 @@ def ind_of(letter)
   ESPERANTO_ALPHABET.index(letter)
 end
 
-def create_compare_arry(short_arr, long_arr)
-  p short_arr
-  p long_arr
-  compare_arr = []
-  short_arr.each_with_index do |index, value|
-    a_val = short_arr[index]
-    b_val = long_arr[index]
-    entry = [a_val,b_val]
-    compare_arr << entry
-  end
-  pp compare_arr
-  compare_arr
-end
-
-
-
 # ATTEMPT 1
 # def alphabetize(arr)
 #   # code here
