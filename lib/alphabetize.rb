@@ -2,6 +2,10 @@ require 'pp'
 
 ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
+def alphabetize(array)
+  
+
+end
 
 def remove_spaces(word)
   word.gsub("\s","")
