@@ -13,8 +13,13 @@ def alphabetize(array)
       a2 = ESPERANTO_ALPHABET.index(parsed_a[1])
       a2 = ESPERANTO_ALPHABET.index(parsed_b[1])
       compare_1 = perform_compare(a2,b2)
+      if compare_1 == 0
+
+      else
+        return compare_1
+      end
     else
-      compare_0
+      return compare_0
     end
   end
 end
