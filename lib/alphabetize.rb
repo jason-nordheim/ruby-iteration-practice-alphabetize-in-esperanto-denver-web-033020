@@ -2,42 +2,6 @@ require 'pp'
 
 ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
-def alphabetize(arr)
-  # code here
-  arr.sort do |a,b|
-    strip_a = remove_spaces(a)
-    strip_b = remove_spaces(b)
-    arr_a = strip_a.chars.map { |e| ind_of(e)  }
-    arr_b = strip_b.chars.map { |e| ind_of(e)  }
-
-    compare_arr = nil
-    short_count = nil
-    if arr_a.count < arr_b.count
-      compare_arr = create_compare_arry(arr_a, arr_b)
-      short_count = arr_a.count
-    else
-      compare_arr = create_compare_arry(arr_b,arr_a)
-      short_count = arr_b.count
-    end
-
-    # compare each value within the 'compare_arr'
-    # if the values are the same check the next letter
-    # if the values are different,
-    i = 0
-    loop do
-      val = compare_arr[i]
-      ai = compare_arr[i][0]
-      bi = compare_arr[i][1]
-      if ai != bi
-        return compare_arr[i][0] <=> compare_arr[i][1]
-      end
-      i += 1
-      if i == short_count
-        break
-      end
-    end
-  end
-end
 
 def remove_spaces(word)
   word.gsub("\s","")
@@ -125,4 +89,42 @@ end
 #
 # def p_word_and_index word, index
 #   puts "A: word => #{word} => Index #{index}"
+# end
+
+
+# def alphabetize(arr)
+#   # code here
+#   arr.sort do |a,b|
+#     strip_a = remove_spaces(a)
+#     strip_b = remove_spaces(b)
+#     arr_a = strip_a.chars.map { |e| ind_of(e)  }
+#     arr_b = strip_b.chars.map { |e| ind_of(e)  }
+#
+#     compare_arr = nil
+#     short_count = nil
+#     if arr_a.count < arr_b.count
+#       compare_arr = create_compare_arry(arr_a, arr_b)
+#       short_count = arr_a.count
+#     else
+#       compare_arr = create_compare_arry(arr_b,arr_a)
+#       short_count = arr_b.count
+#     end
+#
+#     # compare each value within the 'compare_arr'
+#     # if the values are the same check the next letter
+#     # if the values are different,
+#     i = 0
+#     loop do
+#       val = compare_arr[i]
+#       ai = compare_arr[i][0]
+#       bi = compare_arr[i][1]
+#       if ai != bi
+#         return compare_arr[i][0] <=> compare_arr[i][1]
+#       end
+#       i += 1
+#       if i == short_count
+#         break
+#       end
+#     end
+#   end
 # end
