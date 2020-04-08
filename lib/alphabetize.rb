@@ -14,7 +14,8 @@ def alphabetize(array)
       a2 = ESPERANTO_ALPHABET.index(parsed_b[1])
       compare_2 = perform_compare(a2,b2)
       if compare_2 == 0
-        a3 =
+        a3 = ESPERANTO_ALPHABET.index(parsed_a[2])
+        a3 = ESPERANTO_ALPHABET.index(parsed_b[2])
       else
         return compare_2
       end
