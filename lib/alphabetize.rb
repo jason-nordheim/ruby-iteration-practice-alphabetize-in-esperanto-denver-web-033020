@@ -5,7 +5,8 @@ ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 def alphabetize(array)
   array.sort do |a,b|
     parsed_a = remove_spaces(a)
-    index_a = ESPERANTO_ALPHABET.index(a[0])
+    parsed_b = remove_spaces(b)
+    index_a = ESPERANTO_ALPHABET.index(parsed_a[0])
     index_b = ESPERANTO_ALPHABET.index(b[0])
     if index_a == index_b
       0
