@@ -9,9 +9,9 @@ def alphabetize(array)
     a1 = ESPERANTO_ALPHABET.index(parsed_a[0])
     b1 = ESPERANTO_ALPHABET.index(parsed_b[0])
     compare_0 = perform_compare(a1,b1)
-    if compare_0 == 0 
+    if compare_0 == 0
     else 
-      compare_0 
+      compare_0
     end
   end
 end
