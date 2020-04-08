@@ -3,49 +3,7 @@ require 'pp'
 ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
 def alphabetize(array)
-  array.sort do |a,b|
-    parsed_a = remove_spaces(a)
-    parsed_b = remove_spaces(b)
-    a1 = index_of(parsed_a[0])
-    b1 = index_of(parsed_b[0])
-    compare_1 = perform_compare(a1,b1)
-    if compare_1 == 0
-      a2 = index_of(parsed_a[1])
-      a2 = index_of(parsed_b[1])
-      compare_2 = perform_compare(a2,b2)
-      if compare_2 == 0
-        a3 = index_of(parsed_a[2])
-        b3 = index_of(parsed_b[2])
-        compare_3 = perform_compare(a3,b3)
-        if compare_3 == 0
-          a4 = index_of(parsed_a[3])
-          a4 = index_of(parsed_b[3])
-          compare_4 = perform_compare(a4,b4)
-          if compare_4 == 0
-            a5 = index_of(parsed_a[4])
-            b5 = index_of(parsed_b[4])
-            compare_5 = perform_compare(a5,b5)
-            if compare_5 == 0
-              a6 = index_of(parsed_a[5])
-              b6 = index_of(parsed_b[5])
-              compare_6 = perform_compare(a6,b6)
-              return compare_6
-            else
-              return compare_5
-            end
-          else
-            return compare_4
-          end
-        else
-          return compare_3
-        end
-      else
-        return compare_2
-      end
-    else
-      return compare_1
-    end
-  end
+  array.sort()
 end
 
 def perform_compare(a, b)
