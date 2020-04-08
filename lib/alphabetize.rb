@@ -4,7 +4,14 @@ ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
 def alphabetize(array)
   array.sort do |a,b|
-    
+    index_a = ESPERANTO_ALPHABET.index(a[0])
+    index_b = ESPERANTO_ALPHABET.index(b[0])
+    if index_a == index_b
+      0 
+    elsif index_a < index_b
+      -1 
+    elsif index_a > index_b 
+    end
   end
 end
 
