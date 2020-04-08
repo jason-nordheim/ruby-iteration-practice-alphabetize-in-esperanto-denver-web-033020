@@ -27,7 +27,8 @@ def alphabetize(array)
             compare_5 = perform_compare(a5,b5)
             if compare_5 == 0
               a6 = index_of(parsed_a[5])
-              a6 = index_of(parsed_b[5])
+              b6 = index_of(parsed_b[5])
+              compare_6 = perform_compare(a6,b6)
             else
               return compare_5
             end
