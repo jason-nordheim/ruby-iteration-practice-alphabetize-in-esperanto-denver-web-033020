@@ -10,6 +10,8 @@ def alphabetize(array)
     b1 = ESPERANTO_ALPHABET.index(parsed_b[0])
     if a1 == b1
       # take a look at character 2
+      a2 = ESPERANTO_ALPHABET.index(parsed_a[1])
+      b2 = ESPERANTO_ALPHABET.index(parsed_b[1])
 
     elsif a1 < b1
       -1
@@ -18,6 +20,9 @@ def alphabetize(array)
     end
   end
 end
+
+def perform_compare(a, b)
+end 
 
 def remove_spaces(word)
   word.gsub("\s","")
