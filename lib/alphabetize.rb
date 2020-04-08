@@ -8,12 +8,12 @@ def alphabetize(array)
     parsed_b = remove_spaces(b)
     a1 = ESPERANTO_ALPHABET.index(parsed_a[0])
     b1 = ESPERANTO_ALPHABET.index(parsed_b[0])
-    if a1 == index_b
+    if a1 == b1
       # take a look at character 2
 
-    elsif a1 < index_b
+    elsif a1 < b1
       -1
-    elsif a1 > index_b
+    elsif a1 > b1
       1
     end
   end
