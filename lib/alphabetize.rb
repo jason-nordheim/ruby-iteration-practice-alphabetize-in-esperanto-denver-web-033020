@@ -12,7 +12,7 @@ def alphabetize(array)
     if compare_0 == 0
       a2 = ESPERANTO_ALPHABET.index(parsed_a[1])
       a2 = ESPERANTO_ALPHABET.index(parsed_b[1])
-
+      compare_1 = perform_compare(a2,b2)
     else
       compare_0
     end
