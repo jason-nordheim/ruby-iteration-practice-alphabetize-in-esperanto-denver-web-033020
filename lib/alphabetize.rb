@@ -22,7 +22,8 @@ def alphabetize(array)
 end
 
 def perform_compare(a, b)
-end 
+  a <=> b 
+end
 
 def remove_spaces(word)
   word.gsub("\s","")
