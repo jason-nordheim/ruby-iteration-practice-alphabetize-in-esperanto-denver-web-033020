@@ -13,6 +13,7 @@ def alphabetize(array)
     elsif index_a < index_b
       -1
     elsif index_a > index_b
+      1 
     end
   end
 end
